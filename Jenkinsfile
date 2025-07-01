@@ -28,7 +28,7 @@ pipeline {
 
     stage('Build Frontend Image') {
       steps {
-        dir('frontend') {
+        dir('trythat_frontend') {
           sh '''
           docker build -t $ECR_FRONTEND_REPO:$IMAGE_TAG .
           docker push $ECR_FRONTEND_REPO:$IMAGE_TAG
@@ -39,7 +39,7 @@ pipeline {
 
     stage('Build Backend Image') {
       steps {
-        dir('backend') {
+        dir('trythat_backend') {
           sh '''
           docker build -t $ECR_BACKEND_REPO:$IMAGE_TAG .
           docker push $ECR_BACKEND_REPO:$IMAGE_TAG
