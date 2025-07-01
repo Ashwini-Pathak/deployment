@@ -1,0 +1,39 @@
+.otp {
+  background: #fff;
+  box-shadow: 0px 0px 40px #00000014;
+  border-radius: 20px;
+  padding: 30px;
+  height: 400px;
+
+  form {
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+  .otp-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    justify-content: space-between;
+  }
+  .otp-text {
+    margin-top: 50px;
+  }
+  .otp-input {
+    margin-top: 50px;
+    font-size: 18px !important;
+    font-weight: 600;
+    padding: 0.6rem 0.5rem !important;
+  }
+  .otp-form__button {
+    color: white !important;
+    background-color: #023fac !important;
+    font-size: 12px;
+    margin: 50px 0px 30px 0px;
+  }
+  .otp-form__message {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+}

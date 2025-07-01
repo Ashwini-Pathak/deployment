@@ -1,0 +1,40 @@
+.personalDtlsSection {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  &-form {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    width: 100%;
+    padding: 0px 10px;
+    gap: 10px;
+    overflow: scroll;
+    &__card {
+      width: 30%;
+      overflow: scroll;
+    }
+    &__cardtwo {
+      overflow: scroll;
+      width: 40%;
+      // flex: 1;
+    }
+  }
+}
+
+.verifyEmailBody {
+  button {
+    margin-right: -12px;
+    margin-top: -13px;
+  }
+  .ant-modal-content {
+    height: 500px;
+  }
+}
+.ant-form-item-row {
+  width: 100% !important;
+}

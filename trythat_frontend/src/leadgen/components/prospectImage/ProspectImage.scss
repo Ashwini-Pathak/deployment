@@ -1,0 +1,21 @@
+.prospectimage-container{
+    display: inline-block;
+    position: relative;
+    margin-bottom: 20px;
+    text-align: center;
+    align-self: center;
+    &__circle{
+        border-radius: 50%;
+        top: 10px;
+    }
+    &__imgbox{
+        position: absolute;
+          bottom: -15px;
+          border-radius: 50%;
+          z-index:  1;
+          right: 15px;
+          &-img{
+            width: 25px;
+          }
+    }
+}

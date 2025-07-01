@@ -1,0 +1,180 @@
+.companiesList {
+  .ant-card-body {
+    .ant-table-wrapper {
+      .ant-spin-nested-loading {
+        .ant-spin-container {
+          .ant-table {
+            .ant-table-container {
+              .ant-table-content {
+                table {
+                  border-spacing: 0 10px;
+                  .ant-table-thead {
+                    border-radius: 10px;
+                    font-size: 12px;
+                    background-color: #f0f0f0;
+                    tr > .ant-table-cell {
+                      padding: 8px !important;
+                      border-bottom: 1px solid #ffffff;
+                      color: #313131;
+                    }
+                    tr {
+                      .ant-table-cell:first-child {
+                        border-bottom-left-radius: 10px;
+                      }
+                      .ant-table-cell:last-child {
+                        border-bottom-right-radius: 10px;
+                      }
+                    }
+                    tr > .ant-table-cell::before {
+                      content: none;
+                    }
+                  }
+                  .ant-table-tbody {
+                    margin-top: 10px;
+                    border-radius: 10px;
+                    font-size: 12px;
+                    tr > .ant-table-cell {
+                      padding: 8px !important;
+                      border-bottom: 0px !important;
+                      color: #313131;
+                    }
+                    tr > .ant-table-cell::before {
+                      content: none;
+                    }
+                    tr {
+                      background-color: #f8f8f8;
+                      .ant-table-cell:first-child {
+                        border-top-left-radius: 10px;
+                        border-bottom-left-radius: 10px;
+                      }
+                      .ant-table-cell:last-child {
+                        border-top-right-radius: 10px;
+                        border-bottom-right-radius: 10px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.personalDtlsSection {
+  // padding-top: 20px;
+  //   padding-bottom: 10px;
+  //   padding-left: 10px;
+  background-color: #f8f8f8;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    height: 100vh;
+         
+    &-card{
+      flex: 1;
+
+      .card__title{
+        color: #0081FC;
+        font-size: 24px;
+        margin-bottom: 0px;
+      }
+      &__backbtn{
+         cursor: pointer;
+         vertical-align: middle;
+      
+      }
+      &__username{
+        font-size: 16px;
+        vertical-align: middle;
+        font-weight: 600;
+      }
+      .prospectImage{
+        text-align: center;
+      }
+      &__text{
+        color: #151515;
+        font-size: 12px;
+      }
+      .card__titletwo{
+        margin-bottom: 0px;
+      }
+      .card__about{
+        color: #707070;
+        font-size: 12px;
+      }
+      .card__keyoffering{
+        margin-bottom: 0px;
+        margin-top: 20px;
+      }
+      &__divbox{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        margin-top: 20px;
+        .divbox__item{
+          flex: 2;
+          .item-directortext{
+            margin-bottom: 0px;
+          }
+          .item-detailname{
+            color: #0081FC;
+            font-size: 12px;
+            text-decoration: underline;
+            cursor: pointer;
+          }
+          .item-detailinfo{
+            color: #0081FC;
+            font-size: 12px;
+            .detailinfo-img{
+                width: 12px;
+                height: 12px;
+                color: #0081FC;
+                vertical-align: middle;
+               }
+          }
+          
+        }
+        .divbox-founder{
+          font-size: 12px;
+        }
+        .divbox-founderyear{
+          color: #525252;
+          font-size: 12px;
+        }
+      }
+    }
+    .companiesList{
+      flex: 1.5;
+    }
+      
+
+
+
+
+
+  .ant-card {
+    .ant-card-body {
+      .ant-space {
+        .ant-space-item {
+          .orgDtls__keyOfferings {
+            display: inline-flex;
+            flex-wrap: wrap;
+
+            .orgDtls__keyOfferings__item {
+              background-color: #f2f9ff;
+              color: #349afd;
+              text-align: left;
+              font-size: 10px;
+              border: none;
+              margin-right: 10px;
+              margin-top: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+* {
+  font-family: 'Poppins' !important;
+  margin: 0;
+  padding: 0;
+
+  // -----css color codes-------
+
+  --white: #fffff;
+  ---blue: #2157A6;
+}
+
+.ant-layout {
+  padding-left: 20px;
+}
+@media screen and (max-width: 1500px) {
+  .ant-layout {
+    padding-left: 10px;
+  }
+  .ant-divider-horizontal {
+    margin: 1px;
+  }
+}
+
+.ant-layout-has-sider {
+  padding: 20px;
+  background: #f8f8f8;
+}
+
+.backBtn {
+  background-color: #fafafa;
+  border: 0;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ant-divider-horizontal {
+  margin: 16px;
+}

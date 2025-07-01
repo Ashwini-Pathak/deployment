@@ -1,0 +1,50 @@
+.occupantDtlsSection {
+  .ant-steps.ant-steps-navigation.ant-steps-vertical > .ant-steps-item::after {
+    visibility: hidden;
+  }
+  .ant-steps.ant-steps-navigation.ant-steps-vertical > .ant-steps-item.ant-steps-item-active::before {
+    left: 118px;
+  }
+  .ant-steps-item-description {
+    margin-top: -30px;
+    margin-left: 160px;
+  }
+  .ant-steps-item-container {
+    // margin-right: 82px;
+    width: 100%;
+  }
+  .ant-steps-item-title {
+    margin-left: 7px;
+  }
+  .container-card > .ant-card-body {
+    padding: 0px !important;
+    border: none;
+  }
+  .ant-steps.ant-steps-navigation.ant-steps-vertical > .ant-steps-item.ant-steps-item-active::before {
+    height: calc(100%);
+    margin-top: 26px;
+  }
+  .ant-card-bordered {
+    border: 1px solid #f8f8f8;
+  }
+  .ant-steps.ant-steps-navigation.ant-steps-vertical > .ant-steps-item:not(.ant-steps-item-active)::before {
+    top: 0;
+    left: 118px;
+    display: block;
+    width: 3px;
+    height: calc(100%);
+    margin-top: 26px;
+    background-color: #e4e1e1;
+  }
+
+  .ant-steps.ant-steps-navigation.ant-steps-vertical > .ant-steps-item.ant-steps-item-active {
+    > .ant-steps-item-container {
+      > .ant-steps-item-content {
+        > .ant-steps-item-title {
+          color: #0081fc;
+          font-weight: 900;
+        }
+      }
+    }
+  }
+}

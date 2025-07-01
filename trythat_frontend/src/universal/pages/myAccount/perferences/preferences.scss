@@ -1,0 +1,186 @@
+.preferences {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  display: flex;
+  padding: 0px 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  .insideContainers {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+  }
+  heading {
+    font-size: 17px;
+    font-weight: 700;
+    color: black;
+  }
+
+  &-container {
+    margin-top: 12px;
+    &__space {
+      align-items: baseline;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      &--addTag {
+        border-radius: 20px;
+        border-color: #548ad3;
+        color: #548ad3;
+        margin-right: 10px;
+      }
+      &--note {
+        color: #929292;
+        margin-right: 10px;
+        font-size: 12px;
+        margin-top: 5px;
+      }
+      &--item {
+        margin: 0px;
+        .item-select {
+          width: 400px;
+          height: 40px;
+        }
+      }
+      &--noData {
+        margin: 0px;
+        .item-select {
+          width: 400px;
+          height: 40px;
+        }
+        .ant-form-item-control-input {
+          min-height: 0;
+        }
+      }
+      &--tagbox {
+        margin-top: 6px;
+        max-height: 100px;
+        overflow-y: auto;
+        max-width: 600px;
+
+        .tagbox--tag {
+          padding-left: 20px;
+          padding-right: 20px;
+          border-radius: 120px;
+          text-align: center;
+
+          margin-top: 5px;
+          .tag-text {
+            color: #548ad3;
+            font-size: 12px;
+          }
+        }
+        .tagbox--selectedTag {
+          padding-left: 20px;
+          padding-right: 20px;
+          border-radius: 120px;
+          text-align: center;
+          background-color: #3f51a3;
+          margin-top: 5px;
+          .tag-text {
+            color: #ffffff;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+
+  .ant-select-selection-overflow {
+    visibility: hidden;
+    height: '40px';
+  }
+  .ant-row,
+  .ant-form-item-row {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  label {
+    font-weight: 700;
+  }
+  .preferences {
+    margin-top: 12px;
+    margin-bottom: 12px;
+
+    .title {
+      font-size: 17px;
+      font-weight: 700;
+      color: black;
+    }
+    &-container {
+      margin-top: 12px;
+      &__space {
+        align-items: baseline;
+
+        &--addTag {
+          border-radius: 20px;
+          border-color: #548ad3;
+          color: #548ad3;
+          margin-right: 10px;
+        }
+        &--note {
+          color: #929292;
+          margin-right: 10px;
+          font-size: 12px;
+          margin-top: 5px;
+        }
+        &--item {
+          margin: 0px;
+          .item-select {
+            width: 400px;
+            height: 40px;
+          }
+        }
+        &--noData {
+          margin: 0px;
+          .item-select {
+            width: 400px;
+            height: 40px;
+          }
+          .ant-form-item-control-input {
+            min-height: 0;
+          }
+        }
+        &--tagbox {
+          margin-top: 6px;
+          max-height: 100px;
+          overflow-y: auto;
+          max-width: 600px;
+
+          .tagbox--tag {
+            padding-left: 20px;
+            padding-right: 20px;
+            border-radius: 120px;
+            text-align: center;
+
+            margin-top: 5px;
+            .tag-text {
+              color: #548ad3;
+              font-size: 12px;
+            }
+          }
+          .tagbox--selectedTag {
+            padding-left: 20px;
+            padding-right: 20px;
+            border-radius: 120px;
+            text-align: center;
+            background-color: #3f51a3;
+            margin-top: 5px;
+            .tag-text {
+              color: #ffffff;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+
+    .ant-select-selection-overflow {
+      visibility: hidden;
+      height: '40px';
+    }
+  }
+}

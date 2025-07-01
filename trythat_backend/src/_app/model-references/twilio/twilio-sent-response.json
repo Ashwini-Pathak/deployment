@@ -1,0 +1,26 @@
+{
+    "otpResponse": {
+      "sid": "",
+      "serviceSid": "",
+      "accountSid": "",
+      "to": "",
+      "channel": "sms",
+      "status": "pending",
+      "valid": false,
+      "lookup": {
+        "carrier": null
+      },
+      "amount": null,
+      "payee": null,
+      "sendCodeAttempts": [
+        {
+          "attempt_sid": "",
+          "channel": "sms",
+          "time": ""
+        }
+      ],
+      "dateCreated": "",
+      "dateUpdated": "",
+      "url": ""
+    }
+  }

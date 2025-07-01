@@ -1,0 +1,20 @@
+.card-notification{
+    margin-top: 10px;
+    &__items{
+        &-box{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            &__date{
+                color: #6E6E6E;
+            }
+            &__time{
+                color: #B4B4B4;
+            }
+        }
+      &-desc{
+        color: #313131;
+        margin-top: 10px;
+      }
+    }
+}

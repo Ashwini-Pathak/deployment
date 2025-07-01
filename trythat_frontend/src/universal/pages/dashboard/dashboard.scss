@@ -1,0 +1,122 @@
+.userDashboard {
+  &__section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+
+  &__card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 70%;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+  }
+
+  &__announcement-container {
+    width: 30%;
+    max-height: 635px;
+    overflow: scroll;
+    .announcement-desc{
+      margin-top: 200px;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+  }
+
+  &__switch-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    &__card {
+      width: calc(25% - 20px); // Adjust the width as needed
+      margin-bottom: 20px;
+
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
+    }
+  }
+
+  &__activity-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+    .activity-item__action{
+      display: flex;
+      align-items: center;
+    }
+    &__icon {
+      width: 30px;
+      height: 30px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+
+    &__message {
+      flex: 1;
+      font-size: 16px;
+      color: #535353;
+      margin-left: 10px;
+    }
+
+    &__date {
+      font-size: 16px;
+      color: #535353;
+    }
+  }
+}
+.userdashboard-activity{
+  max-height: 300px;
+  overflow: scroll;
+}
+.userDashboard__switch-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.userDashboard__switch-container > .ant-card {
+  flex: 0 0 calc(25% - 10px);
+  min-width: 210px;
+
+}
+@media  screen and (max-width: 1500px) {
+  .userDashboard__switch-container > .ant-card {
+    flex: 0 0 calc(25% - 10px);
+    min-width: 172px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .userDashboard__switch-container > .ant-card {
+    flex: 0 0 calc(33.33% - 10px);
+    min-width: 250px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .userDashboard__switch-container > .ant-card {
+    flex: 0 0 calc(50% - 10px);
+    min-width: 150px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .userDashboard__switch-container > .ant-card {
+    flex: 0 0 calc(100% - 10px);
+    
+  }
+}

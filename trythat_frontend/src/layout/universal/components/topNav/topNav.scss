@@ -1,0 +1,135 @@
+.header {
+  background: white;
+  border-radius: 15px;
+  padding: 10px 10px;
+  margin-bottom: 10px;
+  line-height: 0px;
+  height: fit-content;
+
+  .ant-progress-inner {
+    width: 50px !important;
+  }
+
+  &__items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-left: 7px;
+    padding-right: 3px;
+
+    .header__logo-img {
+      cursor: pointer;
+    }
+    .topnav-placeholder {
+      width: 270px;
+      height: 35px;
+    }
+    .topnav-search__button {
+      height: 35px;
+      width: 120px;
+      font-size: 12px;
+    }
+    .header__btn__download,
+    .header__btn__download:hover {
+      background: #0081fc;
+      border-radius: 8px;
+      color: #fff !important;
+      margin-right: 10px;
+    }
+
+    .header__btn__points {
+      border: 0;
+      margin-right: 10px;
+      background: #ffffff;
+      box-shadow: 0px 0px 20px #0000000d;
+      border-radius: 8px;
+      color: #0080fc;
+      font-weight: 600;
+
+      small {
+        font-weight: 400;
+        margin-right: 5px;
+      }
+    }
+
+    .header__right {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .actions-item {
+      padding: 15px;
+      font-family: 200;
+      font-size: 12px;
+      color: white;
+      border-radius: 5px;
+      background-color: #ffa300;
+      .point-item {
+        text-align: center;
+        font-weight: 600;
+        font-size: 14px;
+        color: white;
+      }
+    }
+    .topnav-img {
+      cursor: pointer;
+    }
+    .topnav__notification {
+      cursor: pointer;
+      .notification-item {
+        font-size: 25px;
+        color: #003fab;
+        cursor: pointer;
+      }
+    }
+    .block-items {
+      display: inline-block;
+      position: relative;
+      text-align: center;
+      cursor: pointer;
+      .items-desc {
+        position: absolute;
+        top: 5px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.topnav-items {
+  max-height: 400px;
+  min-width: 400px;
+  overflow: auto;
+  .items-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: end;
+    gap: 4px;
+  }
+  .items-text {
+    font-size: 10px;
+  }
+}
+.ant-dropdown-menu {
+  background-color: #003fab !important; // Ensure the background color matches your theme
+}
+
+.ant-dropdown-menu-item {
+  color: #FFF !important; // Ensure the text color is white
+}
+
+.ant-dropdown-menu-item:hover {
+  background-color: #004fbf !important; // Add a hover effect
+}

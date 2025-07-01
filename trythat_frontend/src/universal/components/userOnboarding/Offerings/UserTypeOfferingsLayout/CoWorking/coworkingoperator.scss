@@ -1,0 +1,53 @@
+.location-box {
+  margin-top: 12px;
+  &__text {
+    font-size: 8px;
+    font-weight: 100;
+  }
+}
+.workingcontainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  &-form {
+    margin-bottom: 0px;
+    &__space {
+      align-items: baseline;
+      &--text {
+        font-weight: 400;
+        font-size: 12px;
+      }
+      &--input {
+        width: 250px;
+      }
+      &--tag {
+        margin-top: 12px;
+        border-radius: 100px;
+        padding: 0px;
+        border-style: none;
+      }
+      &--label {
+        font-size: 12px;
+      }
+      &--select {
+        margin-bottom: 8px;
+        .select-item {
+          width: 400px;
+        }
+      }
+    }
+    &__tagbox {
+      margin-left: 140px;
+      &--tag {
+        border-radius: 100px;
+        margin-left: 0px;
+        margin-top: 5px;
+        .tag-text {
+          color: white;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

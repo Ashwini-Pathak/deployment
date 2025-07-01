@@ -1,0 +1,60 @@
+.dropdown-form-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-inline: 16px;
+  font-size: 12px;
+  margin: 0px;
+  margin-top: 10px;
+  input,
+  button {
+    width: 100%;
+  }
+  .ant-form-item-explain-error {
+    text-align: left;
+  }
+  .postType {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .uploadImage {
+    height: 15rem;
+    width: 14rem;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    transition: border-color 0.3s ease;
+  }
+
+  .ant-upload {
+    background-color: #f8f8f8;
+    // border: none;
+    border-color: transparent;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.formButtons {
+  position: sticky;
+  bottom: 2px;
+  right: 0px;
+  background-color: white;
+}
+.uploadImage .ant-upload-select {
+  border: none !important;
+}
+.ant-upload-wrapper.uploadImage.css-dev-only-do-not-override-usln0u.ant-upload-picture-card-wrapper {
+  border: 2px dashed lightgray;
+  padding: 30px;
+}
+.ant-upload-wrapper.uploadImage {
+  padding: 80px;
+  margin-left: -25px;
+  margin-top: 17px;
+  border: 1px dashed #888;
+}

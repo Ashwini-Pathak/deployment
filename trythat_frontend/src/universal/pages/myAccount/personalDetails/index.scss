@@ -1,0 +1,34 @@
+.personalDtlsSection {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  height: calc(100vh - 100px);
+  padding-left: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  &-form {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    width: 60%;
+    padding: 0px 10px;
+    gap: 10px;
+    &__card {
+      flex: 0.8;
+    }
+    &__cardtwo {
+      flex: 1;
+    }
+  }
+}
+
+.verifyEmailBody {
+  button {
+    margin-right: -12px;
+    margin-top: -13px;
+  }
+  .ant-modal-content {
+    height: 500px;
+  }
+}

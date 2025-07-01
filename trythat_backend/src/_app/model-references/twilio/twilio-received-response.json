@@ -1,0 +1,15 @@
+{
+    "verificationResponse": {
+      "sid": "",
+      "serviceSid": "",
+      "accountSid": "",
+      "to": "",
+      "channel": "",
+      "status": "",
+      "valid": true,
+      "amount": null,
+      "payee": null,
+      "dateCreated": "",
+      "dateUpdated": ""
+    }
+  }

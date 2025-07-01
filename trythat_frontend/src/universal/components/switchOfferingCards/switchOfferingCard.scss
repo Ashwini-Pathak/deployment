@@ -1,0 +1,20 @@
+@media  screen and (max-width: 1500px) {
+  .card_image {
+    width: 40px;
+    height: 40px;
+  
+  }
+  .card_font{
+    font-size: 17px;
+  }
+  .card_tag{
+    font-size: 10px;
+    margin-left: 5.4rem !important;
+  }
+
+  .card_style {
+    .ant-card-body {
+      padding: 20px !important;
+    }
+  }
+}

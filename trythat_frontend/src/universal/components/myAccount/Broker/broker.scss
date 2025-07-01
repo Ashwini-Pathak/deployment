@@ -1,0 +1,40 @@
+.brokerrow{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    &-form{
+        margin-bottom: 0px;
+        &__space{
+            align-items: baseline;
+            &--text{
+                font-size: 12px;
+                font-weight: 400;
+            }
+            &--subTitle {
+                font-size: 12px !important;
+              }
+            &--label{
+                font-size: 12px;
+            }
+            &--select{
+                width: 400px;
+            }
+        }
+        &__location{
+            margin-left: 140px;
+            max-height: 100px;
+            max-width: 700px;
+            overflow: scroll;
+            &--items{
+                border-radius: 100px;
+                margin-left: 0px;
+                margin-top: 5px;
+                .item-text{
+                    color: white;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,144 @@
+.ant-modal-content {
+  width: 110%;
+}
+
+.comment-modal-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+.modal-post {
+  display: flex;
+  flex-direction: column;
+}
+
+.post-left,
+.post-right {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.post-left {
+  width: 100%;
+}
+
+.post-left > div:nth-child(2) > .generic_post_content {
+  margin-top: 0px !important;
+}
+
+.post-left > div:nth-child(2) > .generic_post_content > div:nth-child(2) {
+  margin-top: 20px !important;
+  height: 140px !important;
+}
+
+.left-top,
+.left-bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.left-top {
+  flex: 1;
+}
+
+.left-bottom {
+  flex: 1;
+  padding: 16px;
+}
+
+.no-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: #888;
+  font-size: 16px;
+}
+
+.modal-post-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 16px;
+}
+
+.modal-post-description,
+.modal-post-details,
+.modal-post-contact,
+.modal-post-hashtags {
+  margin: 8px 0;
+}
+
+.modal-post-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.modal-post-action {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.post-right {
+  // max-height: 50%;
+  overflow-y: auto;
+  padding: 16px 0px;
+}
+
+.comment-input-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  gap: 10px;
+}
+
+.comment-input {
+  flex-grow: 1;
+  margin-right: 8px;
+  padding: 8px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+}
+
+.comment-button {
+  background-color: #1890ff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.comments-list {
+  flex-direction: column;
+  gap: 10px;
+  display: flex;
+  width: 400px;
+  max-height: 110px;
+  overflow: scroll;
+}
+
+.comment-item {
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.comment-subheader {
+  font-size: 12px;
+  color: #888;
+}
+
+.comment-text {
+  margin-top: 4px;
+}

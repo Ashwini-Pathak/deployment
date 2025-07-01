@@ -1,0 +1,84 @@
+.selectPostModal {
+  .ant-modal-content {
+    border-radius: 25px;
+  }
+}
+
+.addPostPopup {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .addPostPopupHeader {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .headerText {
+      font-size: 16px;
+    }
+    .subheaderText {
+      font-size: 14px;
+      color: #535353;
+    }
+  }
+  .addPostPopupBody {
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 35px;
+    .postLabel {
+      color: #535353;
+    }
+    .postTypeCard {
+      padding: 16px;
+      display: flex;
+      width: 60px;
+      height: 70px;
+      border-radius: 15px;
+      margin-bottom: 12px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.1);
+      svg {
+        font-size: 50px;
+        object-fit: contain;
+        color: grey;
+      }
+    }
+    .selected {
+      background-color: #1677ff;
+      svg {
+        font-size: 50px;
+        object-fit: contain;
+        color: white;
+      }
+    }
+  }
+}
+
+.addPostPopup:has(.addPostPopupHeader) {
+  padding: 30px 80px;
+}
+
+.ant-modal-content {
+  height: max-content;
+  display: inline-flex;
+  flex-direction: column;
+  max-height: 80vh;
+  padding: 40px !important;
+  border-radius: 20px;
+}
+.ant-modal-body {
+  height: 100%;
+  position: relative;
+}
+.closeIcon {
+  font-size: 20px;
+  padding: 11px 24px 0px 0px;
+}
+.ant-modal-close:hover {
+  background-color: unset !important;
+}

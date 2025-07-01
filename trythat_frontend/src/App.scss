@@ -1,0 +1,150 @@
+.ant-layout {
+  background: #f8f8f8;
+}
+.ant-dropdown-menu-submenu .ant-dropdown-menu {
+  background-color: #a7a7a7;
+}
+.mandatory-star {
+  color: #ff2424;
+  margin-right: 3px;
+}
+::placeholder {
+  color: #7c7c7c;
+  font-size: 12px;
+}
+.formControl,
+.formControl:hover,
+.formControl:focus,
+.formControl:focus-within,
+.ant-input {
+  box-shadow: none !important;
+  font-size: 12px;
+  outline: 0;
+  padding: 0.6rem 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  // background: #f7faff !important;
+  // border-radius: 8px;
+  // border: 0px solid #ced4da;
+}
+.ant-form-item-explain-error {
+  font-size: 11px;
+}
+
+// -----common global css--------
+.d-flex {
+  display: flex;
+}
+.d-column {
+  flex-direction: column;
+}
+.jc-center {
+  justify-content: center;
+}
+.jc-end {
+  justify-content: flex-end;
+}
+.jc-between {
+  justify-content: space-between;
+}
+.jc-around {
+  justify-content: space-around;
+}
+.a-start {
+  align-items: start;
+}
+
+.a-center {
+  align-items: center;
+}
+
+.a-end {
+  align-items: end;
+}
+
+.a-between {
+  align-items: space-between;
+}
+.a-around {
+  align-items: space-around;
+}
+.g-5 {
+  gap: 5px;
+}
+.g-10 {
+  gap: 10px;
+}
+.g-15 {
+  gap: 15px;
+}
+.g-20 {
+  gap: 20px;
+}
+
+.font12 {
+  font-size: 12px;
+}
+.font14 {
+  font-size: 14px;
+}
+.font16 {
+  font-size: 16px;
+}
+.font18 {
+  font-size: 18px;
+}
+.font20 {
+  font-size: 20px;
+}
+.font22 {
+  font-size: 22px;
+}
+.font400 {
+  font-weight: 400;
+}
+.font500 {
+  font-weight: 500;
+}
+.font600 {
+  font-weight: 600;
+}
+.font700 {
+  font-weight: 700;
+}
+
+.p-5 {
+  padding: 5;
+}
+.p-10 {
+  padding: 10;
+}
+.p-20 {
+  padding: 20;
+}
+.fontDark {
+  color: rgba(0, 0, 0);
+}
+.fontLight {
+  color: rgba(0, 0, 0, 0.88);
+}
+.fontExtraLight {
+  color: #949494;
+}
+
+.fontError {
+  color: red;
+}
+.fontBlue {
+  color: #1677ff;
+}
+
+.w-100 {
+  width: 100%;
+}
+.text-center {
+  text-align: center;
+}
+.position-relative {
+  position: relative;
+}

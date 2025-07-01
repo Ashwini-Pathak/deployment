@@ -1,0 +1,35 @@
+.commonCard {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 15px;
+  padding: 25px;
+
+  .title {
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+}
+.imgcontainerAllCards {
+  .comingSoonTag {
+    border-radius: 15px;
+    width: max-content;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #1677ff;
+    font-weight: 700;
+    align-items: center;
+    padding: 5px 20px;
+    font-size: 14x;
+    color: #1677ff;
+    top: 0px;
+  }
+  .cardContainer {
+    filter: blur(1.5px);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}

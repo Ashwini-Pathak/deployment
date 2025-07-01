@@ -1,0 +1,14 @@
+.postDetailsContainer {
+  height: 100%;
+  border-color: red;
+
+  .ant-tabs-nav-list .ant-tabs-tab {
+    margin-right: 30px !important;
+    padding: 0px 14px !important;
+  }
+  .ant-tabs-nav-list .ant-tabs-tab-active {
+    background-color: rgb(222, 240, 255) !important;
+    border-radius: 10px;
+    border: 1px solid white !important;
+  }
+}

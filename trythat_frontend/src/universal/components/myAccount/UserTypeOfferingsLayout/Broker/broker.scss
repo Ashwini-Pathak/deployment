@@ -1,0 +1,35 @@
+.brokerrow {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  &-form {
+    margin-bottom: 0px;
+    &__space {
+      align-items: baseline;
+      flex-wrap: wrap;
+      &--text {
+        font-size: 12px;
+        font-weight: 400;
+      }
+      &--label {
+        font-size: 12px;
+      }
+      &--select {
+        width: 400px;
+      }
+    }
+    &__location {
+      margin-left: 140px;
+      &--items {
+        border-radius: 100px;
+        margin-left: 0px;
+        margin-top: 5px;
+        .item-text {
+          color: white;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

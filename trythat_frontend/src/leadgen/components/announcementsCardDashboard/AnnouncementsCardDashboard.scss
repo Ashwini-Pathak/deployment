@@ -1,0 +1,32 @@
+.card-announcement {
+  margin-top: 10px;
+  background: linear-gradient(180deg, #accafe 0%, #2f6ddb 100%);
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+  background-size: padding-box;
+  background-color: transparent;
+  color: white;
+  &__items {
+    &-heading {
+      font-weight: 400;
+      margin-bottom: 8px;
+      color: white;
+    }
+    &-desc {
+      font-size: 10px;
+      color: white;
+    }
+    &-btn {
+      color: #447de1;
+      margin-top: 10px;
+      border: 0;
+      background-color: white;
+    }
+  }
+  &__date {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

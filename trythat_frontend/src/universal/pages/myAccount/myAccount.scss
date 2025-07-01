@@ -1,0 +1,50 @@
+// .myAccountTabs {
+//   .ant-tabs-nav-list .ant-tabs-tab {
+//     margin-right: 50px;
+//   }
+
+//   .ant-tabs-nav-list .ant-tabs-tab:not(.ant-tabs-tab-active) {
+//     background: none !important;
+//     border: 0 !important;
+//   }
+
+//   .ant-tabs-nav-list .ant-tabs-tab-active {
+//     background: #ffffff !important;
+//     border: 1px solid #ffffff !important;
+//   }
+
+//   .ant-tabs-nav::before {
+//     border-bottom: 0 !important;
+//     margin: 0;
+//   }
+
+//   .ant-tabs-nav {
+//     margin: 0 !important;
+//   }
+// }
+
+.myAccountTabs {
+  .ant-tabs-nav-list .ant-tabs-tab {
+    margin-right: 50px;
+    border: none !important;
+  }
+
+  .ant-tabs-nav-list .ant-tabs-tab:hover {
+    border: none !important;
+  }
+
+  .ant-tabs-nav-list .ant-tabs-tab-active {
+    background: #ffffff !important;
+    border: none !important;
+  }
+
+  .ant-tabs-nav::before {
+    border-bottom: 0 !important;
+    margin: 0;
+  }
+
+  .ant-tabs-nav {
+    margin: 0 !important;
+    border: none !important;
+  }
+}

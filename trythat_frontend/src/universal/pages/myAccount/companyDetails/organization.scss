@@ -1,0 +1,70 @@
+.layout {
+  min-height: 90vh;
+}
+
+.content {
+  padding: 16px;
+  background: #fff;
+}
+
+.section {
+  margin-bottom: 32px;
+  text-align: left;
+  font-size: 16px;
+}
+
+.director {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.contact {
+  display: inline-block;
+  padding-left: 0.5rem;
+}
+
+.org_text {
+  font-size: 14px;
+}
+
+.avatar-title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 80%;
+}
+
+.avatar-wrapper {
+  position: relative;
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid lightgrey;
+}
+
+.titles {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  // width: 50%;
+  margin-top: 10px; /* Add some space between avatar and titles */
+  p {
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
+.titles p {
+  margin: 0;
+  font-size: 16px; /* Optional: Adjust font size */
+}
+
+.image {
+  width: 120px;
+  height: 120px;
+  padding: 0.5rem;
+}
+.photoGallary {
+  width: 100%;
+  overflow: scroll;
+}

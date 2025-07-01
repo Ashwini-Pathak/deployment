@@ -1,0 +1,116 @@
+.raise_concern_container {
+  position: fixed;
+  bottom: 30px;
+  // width: 350px;
+  gap: 15px;
+  z-index: 2;
+  right: 60px;
+  display: flex;
+  flex-direction: column;
+  max-height: 60vh;
+  .pop_over {
+    display: flex;
+    width: 350px;
+    background-color: #f2f2f2;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px 10px 30px 30px;
+    flex: 2;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    .pop_over_header {
+      padding: 20px 25px;
+      background-color: white;
+      display: flex;
+      width: 100%;
+      border-radius: 10px 10px 0px 0px;
+      justify-content: space-between;
+      align-items: center;
+
+      img {
+        height: 25px;
+        object-fit: contain;
+      }
+      svg {
+        color: #a7a7a7;
+        font-size: 22px;
+      }
+    }
+    .pop_over_content {
+      display: flex;
+      flex-direction: column;
+      flex: 2;
+      padding: 20px;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      width: 100%;
+      .pop_over_text {
+        display: flex;
+        flex: 2;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #a7a7a7;
+        .success_box {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 5px;
+
+          svg {
+            color: green;
+            font-size: 22px;
+          }
+        }
+      }
+    }
+    .input_container {
+      display: flex;
+      background-color: white;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+
+      border-radius: 30px;
+
+      .share_icon_container {
+        width: 40px;
+        align-self: flex-end;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #1677ff;
+        margin: 5px;
+        svg {
+          color: white;
+          font-size: 16px;
+          transform: rotateZ(-50deg);
+        }
+      }
+      input {
+        flex: 2;
+        padding: 10px;
+        border-radius: 30px;
+        border: none;
+      }
+    }
+  }
+
+  .message_icon_outer_circle {
+    width: 60px;
+    align-self: flex-end;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1677ff;
+  }
+}
+.show_popover {
+  height: 60vh;
+}

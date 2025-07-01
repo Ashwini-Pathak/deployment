@@ -1,0 +1,132 @@
+.useroffering-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+
+  .offerings {
+    border-radius: 10px;
+    padding: 30px;
+    background-color: white;
+    margin: 5px;
+    &__title {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      .title-size {
+        font-size: 25px !important;
+        .title-offering {
+          font-weight: 600;
+          color: #535353;
+        }
+      }
+    }
+    .ant-card-body {
+      // padding: 60px 15px 15px 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align-last: center;
+      padding: 17px;
+    }
+    .offering-desc {
+      display: flex;
+      margin-top: 30px;
+      margin-bottom: 20px;
+      flex-direction: row;
+      gap: 10px;
+
+      img {
+        width: 45px;
+      }
+    }
+    .useroffering-left {
+      align-items: start;
+      margin-top: 2.5rem;
+      .left-text {
+        font-size: 25px;
+        color: #535353;
+        font-weight: 300;
+        .text-bandwagon {
+          font-weight: 600;
+        }
+      }
+      .left-desc {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 25px;
+        border-radius: 6px;
+        border: 1px solid #003fab;
+        .left-img {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  .userJourney {
+    border-radius: 10px;
+    background-color: white;
+    padding: 30px;
+    margin: 5px;
+    &__title {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .userjourney__welcome {
+      font-size: 25px;
+      color: #535353;
+      font-weight: 300;
+      .welcome-user {
+        font-weight: 600;
+      }
+    }
+    .user-item {
+      color: #313131;
+    }
+    .user-desc {
+      color: #313131;
+      margin-bottom: 15px;
+    }
+    .user-journey {
+      color: #535353;
+      margin-top: 20px;
+      font-weight: 600;
+    }
+    .user-left__checkbox {
+      color: #0180fc;
+      display: flex;
+      align-items: center;
+      margin: 10px 0px;
+      .check-location {
+        display: flex;
+        align-items: center;
+        .location-img {
+          margin-right: 5px;
+        }
+      }
+    }
+    .location-name {
+      color: #a7a7a7;
+      font-style: italic;
+      margin-bottom: 10px;
+    }
+    .location-change {
+      cursor: pointer;
+      color: #0180fc;
+      text-decoration: underline;
+    }
+    .useroffering-btn {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      margin-left: 10px;
+    }
+  }
+}
+
+.simplemap {
+  margin-top: 20px;
+}

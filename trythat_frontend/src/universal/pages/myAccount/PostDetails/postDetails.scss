@@ -1,0 +1,19 @@
+.postDetailsContainer {
+  // height: 90vh; /* Set fixed height for tab content */
+  // overflow-y: scroll; /* Enable vertical scrolling */
+  border-color: red;
+  // height: 90vh;
+
+  .ant-tabs-nav-list .ant-tabs-tab {
+    margin-right: 10px !important;
+    margin-left: 0px !important;
+    padding: 0px 14px !important;
+    overflow: auto;
+    height: 100%;
+  }
+  .ant-tabs-nav-list .ant-tabs-tab-active {
+    background-color: rgb(222, 240, 255) !important;
+    border-radius: 5px;
+    border: 1px solid white !important;
+  }
+}

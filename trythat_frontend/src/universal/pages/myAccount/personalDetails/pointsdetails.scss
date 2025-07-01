@@ -1,0 +1,52 @@
+.pointcontainer{
+    display: flex;
+    flex-direction: column;
+     gap: 10px;
+     align-items: center;
+    text-align: justify;
+    &-heading{
+        &__text{
+            display: flex;
+            justify-content: space-between;
+            &--iconbox{
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+                .iconbox-icon{
+                    height: 40px;
+                }
+            }
+            &--divider{
+                color: #e4e4e4;
+                height: 100px;
+            }
+            .pointcontainer-heading__text--btn{
+                color: #0081FC;
+                border-color: #0081FC;
+            }
+        }
+    }
+      &-card{
+        background-color: #F4F4F4;
+        .pointcontainer-card__point{
+            color: #0081FC;
+            margin-top: 0px !important;
+        }
+        &__desc{
+            text-align: center;
+        }
+        &__descbox{
+            display: flex;
+            gap: 2rem;
+            &--text{
+                font-size: 13px;
+                flex: 2;
+            }
+           .pointcontainer-card__descbox--btn{
+                color: #0081FC;
+                border-color: #0081FC;
+                flex: 1;
+            }
+        }
+      }
+}

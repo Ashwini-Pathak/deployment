@@ -1,0 +1,143 @@
+.post-container {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.post-author {
+  display: flex;
+  align-items: center;
+}
+
+.author-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.author-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.author-name {
+  font-weight: bold;
+}
+
+.author-role {
+  font-size: 14px;
+  color: #888;
+}
+
+.follow-button {
+  background-color: #1890ff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.post-body {
+  margin-bottom: 16px;
+}
+
+.post-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.post-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 16px;
+}
+
+.post-description,
+.post-details,
+.post-contact,
+.post-hashtags {
+  margin: 8px 0;
+}
+
+.post-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.post-action {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.post-action span {
+  margin-left: 8px;
+}
+
+.comment-modal .ant-modal-content {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.modal-post {
+  margin-bottom: 24px;
+}
+
+.modal-post-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.modal-post-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 16px;
+}
+
+.modal-post-description,
+.modal-post-details,
+.modal-post-contact,
+.modal-post-hashtags {
+  margin: 8px 0;
+}
+
+.modal-post-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+.footerDivider{
+  border-color: #888;
+}
+
+.modal-post-action {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.modal-comments {
+  max-height: 400px;
+  overflow-y: auto;
+}

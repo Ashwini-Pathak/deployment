@@ -1,0 +1,147 @@
+.useronboarding {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  height: 100%;
+  &-leftdiv {
+    &__welcome {
+      font-weight: 100;
+      font-size: 32px;
+      &--user {
+        font-weight: 400;
+        font-size: 32px;
+      }
+    }
+    &__desc {
+      font-size: 12px;
+      font-weight: 100;
+    }
+    &__steps {
+      width: 70%;
+      margin-top: 24px;
+    }
+    &__btnbox {
+      display: flex;
+      flex-direction: row-reverse;
+      gap: 10px;
+      &--btn {
+        width: 120px;
+      }
+    }
+  }
+  &-rightdiv {
+    width: 30%;
+    border-radius: 1px;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    &__img {
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+    &__space {
+      width: 100%;
+      position: absolute;
+      top: 50px;
+      left: 0px;
+      z-index: 1;
+      .useronboarding-rightdiv__space--great {
+        color: #132056;
+        text-align: center;
+      }
+      &--pointbox {
+        text-align: center;
+        position: relative;
+        right: 25%;
+        .pointbox-box {
+          position: absolute;
+          margin-top: 25px;
+          align-self: center;
+          display: inline-block;
+          &__img {
+            width: 100%;
+            height: auto;
+            z-index: 999;
+          }
+          &__point {
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            &--userpoint {
+              color: #ffffff;
+              text-align: center;
+              font-size: 48px;
+              font-weight: 900;
+            }
+          }
+        }
+      }
+      .useronboarding-rightdiv__space--pointearn {
+        color: #132056;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 900;
+        margin-top: 150px;
+      }
+      &--descdiv {
+        width: auto;
+        padding: 0px 50px;
+        .descdiv-desc {
+          color: #313131;
+          font-size: 10px;
+          width: 75%;
+          align-self: center;
+        }
+      }
+    }
+  }
+}
+
+.react-joyride__tooltip {
+  padding: 20px !important;
+}
+
+.react-joyride__tooltip button[title="Next"] {
+  border-radius: 6px;
+  color: #fff;
+  background: #1677ff !important;
+  box-shadow: 0 2px 0 rgba(5, 145, 255, 0.1);
+  font-weight: 400 !important;
+  font-size: 14px !important;
+}
+.react-joyride__tooltip button[title="End Tour"] {
+  border-radius: 6px;
+  color: #fff;
+  background: #2157A6 !important;
+  box-shadow: 0 2px 0 rgba(5, 145, 255, 0.1);
+  font-weight: 400 !important;
+  font-size: 14px !important;
+}
+.react-joyride__tooltip button[title="Back"] {
+  border-radius: 6px !important;
+  color: #2157A6 !important;
+  background: transparent !important;
+  border-color: #2157A6 !important;
+  box-shadow: none;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+}
+.react-joyride__tooltip button:focus {
+  outline: none !important;
+  box-shadow:none !important;
+  cursor: pointer;
+}
+.react-joyride__tooltip div div {
+  padding: 10px !important;
+  font-size: 14px;
+}
+.react-joyride__tooltip button[title="Close"] {
+  margin-top: 9px !important;
+}
+.react-joyride__tooltip button[title="Close"] svg {
+  height: 12px !important;
+}
+

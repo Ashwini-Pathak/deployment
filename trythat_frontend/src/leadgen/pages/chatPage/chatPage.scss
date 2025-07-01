@@ -1,0 +1,152 @@
+/* styles.css */
+.custom-chat-container {
+  /* Custom styles for the outer container */
+  font-family: 'Poppins';
+
+  .cc-list__title {
+    display: none;
+  }
+
+  .cc-conversations-with-messages__wrapper {
+    justify-content: space-between;
+    background-color: transparent !important;
+    border: none !important;
+    .cc-conversations-with-messages__sidebar {
+      border: 1px solid #ffffff;
+      border-radius: 15px !important;
+      background-color: white;
+      border-right: 1px solid #ffffff !important;
+      .cc-conversations {
+        .cc-conversations__menus {
+          display: none !important;
+        }
+
+        .cc-list {
+          .cc-list__content {
+            .cc-list__item {
+              .cc-message-list__bubble {
+                .cc-message-bubble__wrapper {
+                  .cc-message-bubble:hover {
+                    .cc-message-options {
+                      display: none !important;
+                    }
+                    .cc-message-bubble__content {
+                      padding: 20px;
+                    }
+                  }
+                }
+              }
+              .cc__list__item {
+                .cc-conversations__options-view {
+                  display: none !important;
+                }
+
+                .cc__tail__view {
+                  display: block !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .cc-conversations-with-messages__main {
+      width: calc(100% - 300px) !important;
+      border: 1px solid #ffffff !important;
+      border-radius: 15px !important;
+      .cc-messages-wrapper {
+        border: 1px solid #ffffff !important;
+        border-radius: 15px !important;
+      }
+    }
+  }
+
+  .cc-message-composer__ai-btn-wrapper {
+    display: none;
+  }
+
+  .cc__item__innerTitle {
+    color: #3f52a3;
+  }
+
+  .cc__button {
+    display: none;
+  }
+
+  .cc-messages__header {
+    border-bottom: 1px solid #f4f4f4;
+  }
+
+  .cc-message-bubble__content {
+    color: black !important;
+
+    .cc__text {
+      color: black !important;
+    }
+  }
+}
+
+/* Add more styles as needed */
+.cc-conversations__options-view {
+  display: none !important;
+}
+
+.cometchat-attach-option {
+  display: none !important;
+}
+
+.cc-list__item {
+  background: none !important;
+
+  + .cc__list__item {
+    background: none !important;
+  }
+}
+
+/* Custom styles for message text */
+.cometchat-message__text {
+  color: #333; /* Set text color */
+  font-size: 14px; /* Set font size */
+}
+
+/* Custom styles for message sender name */
+.cometchat-message__sender {
+  font-weight: bold; /* Make sender name bold */
+}
+
+/* Custom styles for message timestamp */
+.cometchat-message__timestamp {
+  color: #888; /* Set timestamp color */
+}
+
+.cc-message-bubble {
+  .cc-message-options {
+    display: none !important;
+  }
+
+  .cc-message-bubble__content {
+    width: max-content;
+    height: max-content;
+    border: 1px solid #f2f9ff !important;
+    border-radius: 20px 20px 0px 20px !important;
+    // background-color: #f2f9ff !important;
+  }
+}
+.chat-container{
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  .chat-container__box{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    .custom-chat-container{
+      width: 100%;
+      height: 80vh;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+  }
+}

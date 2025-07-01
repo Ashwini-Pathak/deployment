@@ -1,0 +1,124 @@
+.transactionalDtlsSection {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+
+  .transaction-card__right {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    gap: 20px;
+    padding-right: 10px;
+    .right-card__position {
+      position: relative;
+      margin-bottom: 20px;
+    }
+    .items-position {
+      position: absolute;
+      top: 20px;
+    }
+    .right-card__items {
+      width: max-content;
+    }
+  }
+
+  .transaction-card {
+    width: 70%;
+    gap: 30px;
+    display: flex;
+    flex-direction: row;
+
+    .card-position {
+      position: relative;
+      .card-position__pagination {
+        text-align: end;
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+      .points-desc {
+        position: absolute;
+        top: 7px;
+      }
+    }
+
+    .card-items {
+      background-color: #f4f4f4;
+      margin-top: 20px;
+
+      .items-row {
+        gap: 10px;
+      }
+      .item-action {
+        color: #636363;
+      }
+      .item-desc {
+        color: #636363;
+        font-size: 12px;
+      }
+      .item-col {
+        margin-left: auto;
+      }
+      .item-lorem {
+        color: #636363;
+      }
+      .item-list__first {
+        color: #636363;
+        font-size: 12px;
+      }
+      .list-first__col {
+        margin-left: auto;
+      }
+      .list-first__text {
+        color: #636363;
+      }
+      .item-list__second {
+        color: #636363;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .ant-table-cell {
+    background: none !important;
+  }
+
+  .ant-table-cell::before {
+    content: none !important;
+  }
+
+  .ant-card-body {
+    padding: 16px !important;
+  }
+
+  .payment_status_common {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 1px 6px;
+  }
+
+  .payment_success {
+    border: 1px solid green;
+    border-radius: 4px;
+    color: green;
+  }
+  .payment_pending {
+    border: 1px solid rgb(212, 173, 0);
+    border-radius: 4px;
+    color: rgb(212, 173, 0);
+  }
+  .payment_failed {
+    border: 1px solid rgb(186, 0, 0);
+    border-radius: 4px;
+    color: rgb(186, 0, 0);
+  }
+
+  .icon_success {
+    color: white;
+    font-size: 10px;
+  }
+}

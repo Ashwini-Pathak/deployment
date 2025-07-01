@@ -1,0 +1,47 @@
+.profileContent {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  overflow: scroll;
+  padding: 16px 0px;
+  .profileContentCard {
+    display: flex;
+    img {
+      border-radius: 15px;
+      height: 250px;
+      object-fit: contain;
+      width: 250px;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    .cardOverlay {
+      position: absolute;
+      border-radius: 15px;
+      visibility: hidden;
+      height: 250px;
+      width: 250px;
+      background-color: rgba(0, 0, 0, 0.4);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 10px 0px;
+      color: white;
+      .menu {
+        width: 100%;
+        text-align: right;
+      }
+      svg {
+        color: white;
+        font-size: 32px;
+        font-weight: 700;
+      }
+      .cardText {
+        padding: 0px 5px;
+        text-align: center;
+      }
+    }
+  }
+  .profileContentCard:hover .cardOverlay {
+    visibility: visible;
+    transition: 0.2s;
+  }
+}

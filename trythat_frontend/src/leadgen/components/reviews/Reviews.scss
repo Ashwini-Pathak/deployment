@@ -1,0 +1,22 @@
+.averageRating {
+  font-size: 12px;
+  .ant-rate {
+    font-size: 14px !important;
+    margin: 3px 0px 0px !important;
+
+    li {
+      margin-inline-end: 1px !important;
+      color: #ffa300 !important;
+    }
+
+    .ant-rate-star {
+      margin-left: 0 !important;
+    }
+  }
+}
+
+.reviews__card {
+  .ant-card-body {
+    padding: 12px !important;
+  }
+}

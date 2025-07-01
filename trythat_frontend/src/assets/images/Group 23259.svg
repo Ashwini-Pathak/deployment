@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 27.729 30.736">
+  <g id="Group_23259" data-name="Group 23259" transform="translate(-1553.239 -29)">
+    <g id="Group_23266" data-name="Group 23266" transform="translate(-7)">
+      <g id="Icon_feather-bell" data-name="Icon feather-bell" transform="translate(1561.739 30.765)">
+        <path id="Path_84" data-name="Path 84" d="M25.107,11.447A8.347,8.347,0,0,0,16.864,3a8.347,8.347,0,0,0-8.243,8.447C8.621,21.3,4.5,24.118,4.5,24.118H29.229S25.107,21.3,25.107,11.447" transform="translate(-4.5 -3)" fill="none" stroke="#003fab" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        <path id="Path_85" data-name="Path 85" d="M25.774,31.5a5.994,5.994,0,0,1-10.369,0" transform="translate(-8.225 -7.015)" fill="none" stroke="#003fab" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <circle id="Ellipse_871" data-name="Ellipse 871" cx="5" cy="5" r="5" transform="translate(1576 29)" fill="#d52525"/>
+    </g>
+  </g>
+</svg>

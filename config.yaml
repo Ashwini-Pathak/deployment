@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: backend-config
+  namespace: trythat-app
+data:
+  NODE_ENV: "production"
+  PORT: "8000"
+  FRONTEND_URL: "https://app.trythat.aribadevops.site"
+  HOST_URL: "https://bknd.trythat.ribadevops.site/v1"
+  DB_URI: "mongodb+srv://cloudnexus:Cloudnexus123@cluster0.ixczwk2.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+  JWT_EXPIRY: "3600"
