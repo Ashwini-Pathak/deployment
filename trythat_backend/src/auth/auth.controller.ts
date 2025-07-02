@@ -9,7 +9,7 @@ import { OtpPayloadVerifyDto } from './dto/otp-payload-verify.dto';
 import { UserRegistrationDto } from './dto/user-registration.dto';
 import { SignInInitDto } from './dto/signin-init.dto';
 import { SignInDto } from './dto/signin-dto';
-import { ConfigEnv } from '../config/config.env.enums';
+import { ConfigEnv } from '../config/database-env.env.enums';
 
 @Controller('auth')
 export class AuthController {
