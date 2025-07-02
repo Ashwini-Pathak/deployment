@@ -9,7 +9,8 @@ pipeline {
     AWS_REGION = 'us-east-1'
     ECR_FRONTEND_REPO = '248189943460.dkr.ecr.us-east-1.amazonaws.com/frontend'
     ECR_BACKEND_REPO  = '248189943460.dkr.ecr.us-east-1.amazonaws.com/backend'
-    IMAGE_TAG = "${env.BUILD_NUMBER}"
+    TIMESTAMP = "${new Date().format('yyyyMMddHHmmss')}"
+    IMAGE_TAG = "${env.BUILD_NUMBER}-${env.TIMESTAMP}"
   }
 
   stages {
@@ -55,7 +56,7 @@ pipeline {
 
   post {
     success {
-      echo "✅ Build and deployment pipeline completed"
+      echo "✅ Build and deployment pipeline completed. Image tag: ${env.IMAGE_TAG}"
     }
     failure {
       echo "❌ Something failed in the pipeline"
