@@ -14,7 +14,7 @@ RUN npm install
 COPY . .
 
 # Run the build script defined in package.json (this typically compiles/transpiles source code)
-RUN npm run build
+RUN NODE_OPTIONS="--max_old_space_size=4096" npm run build
 
 # Use the official Nginx image for the final stage
 FROM nginx
