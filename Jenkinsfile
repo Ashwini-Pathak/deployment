@@ -9,6 +9,7 @@ pipeline {
     AWS_REGION = 'us-east-1'
     ECR_FRONTEND_REPO = '248189943460.dkr.ecr.us-east-1.amazonaws.com/frontend'
     ECR_BACKEND_REPO  = '248189943460.dkr.ecr.us-east-1.amazonaws.com/backend'
+    ECR_LANDINGREPO_REPO  = '248189943460.dkr.ecr.us-east-1.amazonaws.com/landing'
     TIMESTAMP = "${new Date().format('yyyyMMddHHmmss')}"
     IMAGE_TAG = "${env.BUILD_NUMBER}-${env.TIMESTAMP}"
   }
@@ -52,6 +53,18 @@ pipeline {
         }
       }
     }
+
+stage('Build landing Image') {
+      steps {
+        dir('trythat_landingpage') {
+          sh '''
+            docker build -t $ECR_LANDINGREPO_REPO:$IMAGE_TAG .
+            docker push $ECR_LANDINGREPO_REPO:$IMAGE_TAG
+          '''
+        }
+      }
+    }
+    
   }
 
   post {
