@@ -56,10 +56,10 @@ pipeline {
 
   post {
     success {
-      echo "✅ Build and deployment pipeline completed. Image tag: ${env.IMAGE_TAG}"
+      echo "Build and deployment pipeline completed. Image tag: ${env.IMAGE_TAG}"
     }
     failure {
-      echo "❌ Something failed in the pipeline"
+      echo "Something failed in the pipeline"
     }
   }
 }
