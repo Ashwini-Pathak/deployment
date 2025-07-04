@@ -9,7 +9,7 @@ pipeline {
     AWS_REGION = 'us-east-1'
     ECR_FRONTEND_REPO = '248189943460.dkr.ecr.us-east-1.amazonaws.com/frontend'
     ECR_BACKEND_REPO  = '248189943460.dkr.ecr.us-east-1.amazonaws.com/backend'
-    ECR_LANDINGREPO_REPO  = '248189943460.dkr.ecr.us-east-1.amazonaws.com/landing'
+    ECR_LANDINGREPO_REPO  = '248189943460.dkr.ecr.us-east-1.amazonaws.com/landingpage'
     TIMESTAMP = "${new Date().format('yyyyMMddHHmmss')}"
     IMAGE_TAG = "${env.BUILD_NUMBER}-${env.TIMESTAMP}"
   }
