@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: frontend
+  name: landing-page-dep
   namespace: trythat-app
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: frontend
+      app: landing
   template:
     metadata:
       labels:
-        app: frontend
+        app: landing
     spec:
       containers:
-        - name: frontend
-          image: 248189943460.dkr.ecr.us-east-1.amazonaws.com/frontend:latest
+        - name: landing-page
+          image: 248189943460.dkr.ecr.us-east-1.amazonaws.com/landingpage:11-20250708115217
           ports:
             - containerPort: 80
