@@ -29,7 +29,6 @@ spec:
     http:
       paths:
       - pathType: Prefix
-        path: "/foo"
         backend:
           service:
             name: landingpage
