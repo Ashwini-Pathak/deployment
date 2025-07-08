@@ -2,6 +2,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: new-app-dep-on-eks
+  namespace: ingress-nginx
 spec:
   rules:
   - host: "app.trythat.aribadevops.site"
