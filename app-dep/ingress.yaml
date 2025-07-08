@@ -10,7 +10,7 @@ spec:
       - pathType: Prefix
         backend:
           service:
-            name: service1
+            name: frontend
             port:
               number: 80
 
@@ -20,7 +20,7 @@ spec:
       - pathType: Prefix
         backend:
           service:
-            name: service2
+            name: backend
             port:
               number: 8000
 
@@ -32,6 +32,6 @@ spec:
         path: "/foo"
         backend:
           service:
-            name: service3
+            name: landingpage
             port:
               number: 80
