@@ -1,34 +1,36 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: ingress-wildcard-host
+  name: new-app-dep-on-eks
 spec:
   rules:
   - host: "app.trythat.aribadevops.site"
     http:
       paths:
-      - pathType: Prefix
+      - path: "/"
+        pathType: Prefix
         backend:
           service:
-            name: frontend
+            name: service1
             port:
               number: 80
 
   - host: "bknd.trythat.aribadevops.site"
     http:
       paths:
-      - pathType: Prefix
+      - path: "/"
+        pathType: Prefix
         backend:
           service:
             name: backend
             port:
               number: 8000
 
-
-  - host: "Trythat.aribadevops.site"
+  - host: "trythat.aribadevops.site"
     http:
       paths:
-      - pathType: Prefix
+      - path: "/foo"
+        pathType: Prefix
         backend:
           service:
             name: landingpage
