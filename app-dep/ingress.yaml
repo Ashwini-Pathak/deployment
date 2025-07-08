@@ -11,7 +11,7 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: service1
+            name: frontend
             port:
               number: 80
 
@@ -29,7 +29,7 @@ spec:
   - host: "trythat.aribadevops.site"
     http:
       paths:
-      - path: "/foo"
+      - path: "/"
         pathType: Prefix
         backend:
           service:
