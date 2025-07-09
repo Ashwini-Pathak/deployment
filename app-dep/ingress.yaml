@@ -2,7 +2,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: trythat-ingress
-  namespace: ingress-nginx
+  namespace: trythat-app
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
     nginx.ingress.kubernetes.io/use-regex: "true"
@@ -16,7 +16,7 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: frontend-service.trythat-app
+                name: frontend-service
                 port:
                   number: 80
     - host: app.trythat.aribadevops.site
@@ -26,7 +26,7 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: app-service.trythat-app
+                name: app-service
                 port:
                   number: 80
     - host: bknd.trythat.aribadevops.site
@@ -36,6 +36,6 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: backend-service.trythat-app
+                name: backend-service
                 port:
                   number: 8000
