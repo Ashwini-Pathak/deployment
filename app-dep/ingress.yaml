@@ -2,7 +2,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   annotations:
-    argocd.argoproj.io/tracking-id: web-app:networking.k8s.io/Ingress:ingress-nginx/trythat-app
+    argocd.argoproj.io/tracking-id: web-app:networking.k8s.io/Ingress:trythat-app/trythat-app
   name: trythat-app
   namespace: trythat-app
 spec:
