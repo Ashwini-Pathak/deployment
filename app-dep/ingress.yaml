@@ -1,39 +1,46 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  annotations:
-    argocd.argoproj.io/tracking-id: web-app:networking.k8s.io/Ingress:trythat-app/trythat-app
   name: trythat-app
   namespace: trythat-app
+  annotations:
+    argocd.argoproj.io/tracking-id: web-app:networking.k8s.io/Ingress:trythat-app/trythat-app
 spec:
+  ingressClassName: nginx
+  tls:
+    - hosts:
+        - app.trythat.aribadevops.site
+        - bknd.trythat.aribadevops.site
+        - trythat.aribadevops.site
+      secretName: trythat-site-tls
   rules:
     - host: app.trythat.aribadevops.site
       http:
         paths:
-          - backend:
+          - path: /
+            pathType: Prefix
+            backend:
               service:
                 name: frontend
                 port:
                   number: 80
-            path: /
-            pathType: Prefix
     - host: bknd.trythat.aribadevops.site
       http:
         paths:
-          - backend:
+          - path: /
+            pathType: Prefix
+            backend:
               service:
                 name: backend
                 port:
                   number: 8000
-            path: /
-            pathType: Prefix
     - host: trythat.aribadevops.site
       http:
         paths:
-          - backend:
+          - path: /
+            pathType: Prefix
+            backend:
               service:
                 name: landingpage
                 port:
                   number: 80
-            path: /
-            pathType: Prefix
