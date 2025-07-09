@@ -4,7 +4,7 @@ metadata:
   annotations:
     argocd.argoproj.io/tracking-id: web-app:networking.k8s.io/Ingress:ingress-nginx/new-app-dep-on-eks
   name: new-app-dep-on-eks
-  namespace: ingress-nginx
+  namespace: trythat-app
 spec:
   rules:
     - host: app.trythat.aribadevops.site
