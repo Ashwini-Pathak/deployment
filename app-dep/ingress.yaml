@@ -6,8 +6,15 @@ metadata:
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
     nginx.ingress.kubernetes.io/use-regex: "true"
+    cert-manager.io/cluster-issuer: letsencrypt-http
 spec:
   ingressClassName: nginx
+  tls:
+    - hosts:
+        - trythat.aribadevops.site
+        - app.trythat.aribadevops.site
+        - bknd.trythat.aribadevops.site
+      secretName: trythat-app-tls
   rules:
     - host: trythat.aribadevops.site
       http:
