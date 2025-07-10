@@ -12,3 +12,6 @@ spec:
       - http01:
           ingress:
             class: nginx
+            podTemplate: 
+              annotations: 
+                nginx.ingress.kubernetes.io/rewrite-target: /
